@@ -1,0 +1,19 @@
+﻿<Application x:Class="Diplom.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Diplom"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#80ff00"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="Green"/>
+        </Style>
+    </Application.Resources>
+</Application>

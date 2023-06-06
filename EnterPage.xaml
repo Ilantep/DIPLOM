@@ -1,0 +1,46 @@
+﻿<Page x:Class="Diplom.EnterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diplom"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EnterPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Border CornerRadius="25"   Background="MediumAquamarine" Width="330" >
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Добро пожаловать" FontSize="25" HorizontalAlignment="Center" FontWeight="Bold" Margin="2,5,2,0" VerticalContentAlignment="Bottom"/>
+                    <Label Content="Введите логин и пароль" FontSize="20" HorizontalContentAlignment="Center" FontWeight="Medium" Margin="2,0,2,10" FontStyle="Italic" VerticalContentAlignment="Top"/>
+
+                    <Grid Margin="2" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Margin="0,5" Content="Логин : " VerticalContentAlignment="Center" 
+                           HorizontalContentAlignment="Right"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="TextBox" Margin="0,5" Width="150" VerticalContentAlignment="Center"
+                             HorizontalContentAlignment="Left"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" Margin="0,5" Content="Пароль : " VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                        <PasswordBox Grid.Row="1" Grid.Column="1" x:Name="PasswordBox" Margin="0,5" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+
+                        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                            <Button Content="Очистить" x:Name="btnClear" Margin="2,10" Width="100" Click="btnClear_Click"  Background="PaleVioletRed" Foreground="Black" BorderBrush="Red"/>
+                            <Button Content="Войти" x:Name="btnLogin" Margin="2,10" Width="100" Height="30" Click="btnLogin_Click"/>
+
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
